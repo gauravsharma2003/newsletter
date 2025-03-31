@@ -1,43 +1,55 @@
 {
-  "title": "TOI Global Brief",
+  "title": "6@6 by TOI",
   "subtitle": "Your world. Decoded.",
   "date": "March 31, 2025",
   "stories": [
       {
+        "image": "https://static.toiimg.com/thumb/msid-119723718,imgsize-840859,width-800,resizemode-4/119723718.jpg",
           "headline": "🎨 Ghibli Magic Causes GPU Meltdown!",
-          "what_happened": "🔥 Just when you think AI couldn't get any cooler, OpenAI introduced Ghibli-style image generation in ChatGPT, leading to a delightful frenzy. Users swarmed in, turning the platform into a GPU sauna! CEO Sam Altman quickly announced on Twitter, \"Our GPUs are overheating. We're rolling out some temporary rate limits while we optimize things—shouldn't take too long!\" This isn't just about aesthetics; it’s a tech crisis in the making. With further chaos brewing, Rohan Sahai from Sora noted, \"Our GPUs are frying too!\" as the demand for creative content skyrocketed.",
+          "what_happened": "🔥 Just when you think AI couldn't get any cooler, OpenAI introduced Ghibli-style image generation in ChatGPT, leading to a delightful frenzy. Users swarmed in, turning the platform into a GPU sauna! CEO Sam Altman quickly announced on Twitter, \"Our GPUs are overheating. We're rolling out some temporary rate limits while we optimize things—shouldn't take too long!\" This isn't just about aesthetics; it's a tech crisis in the making. With further chaos brewing, Rohan Sahai from Sora noted, \"Our GPUs are frying too!\" as the demand for creative content skyrocketed.",
           "why_it_matters": "💥 Why it matters? This isn't just a fun tech hiccup; it's a clear signal of the intense interest in AI art that has users clamoring for more. The rush demonstrates a critical gap between the burgeoning demand for these innovative tools and the existing infrastructure's ability to support them. If you thought AI was the future, just wait until the hardware can't keep up!",
-          "so_what": "🔍 What next? As OpenAI races to cool down its servers, users will refine their expectations. Altman promises cooler heads will prevail soon, with a daily limit of three image generations for free users. This frenzy shows just how much creativity can be unleashed when technology meets imagination—let's see if patience becomes the new virtue in the world of AI art!"
+          "so_what": "🔍 What next? As OpenAI races to cool down its servers, users will refine their expectations. Altman promises cooler heads will prevail soon, with a daily limit of three image generations for free users. This frenzy shows just how much creativity can be unleashed when technology meets imagination—let's see if patience becomes the new virtue in the world of AI art!",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/ghibli-style-ai-art-is-melting-gpus-after-chatgpt-maker-ceo-sam-altman-openais-rohan-sahai-says-you-may-see-/articleshow/119723766.cms"
       },
       {
+        "image": "https://static.toiimg.com/thumb/msid-119793947,imgsize-872800,width-800,height-450,resizemode-72/119793947.jpg",
           "headline": "🚗 Speed Demon Crashes Lamborghini in Noida!",
           "what_happened": "😱 A high-speed joyride turned terrifying when a Lamborghini, belonging to YouTuber Mridul, crashed into two construction workers in Noida. The car was being test-driven by Deepak Kumar when it veered off course, leaving the workers injured. A viral video of the aftermath captured a heated exchange with Deepak dismissively asking, \"Is anyone dead?\" sparking outrage online.",
           "why_it_matters": "⚠️ Why it matters? This incident raises significant questions about accountability in reckless driving, especially among influencers who flaunt their luxury lifestyles. The casual attitude displayed by the driver reflects a worrying trend where the thrill of speed sometimes overshadows the value of human life.",
-          "so_what": "🧐 What now? With Deepak under police custody facing serious charges, this incident could be a learning moment for both young drivers and influencers. It’s high time they recognize the weight of their actions and the potential consequences. Are public figures setting a dangerous precedent for irresponsible behavior?"
+          "so_what": "🧐 What now? With Deepak under police custody facing serious charges, this incident could be a learning moment for both young drivers and influencers. It's high time they recognize the weight of their actions and the potential consequences. Are public figures setting a dangerous precedent for irresponsible behavior?",
+          "url": "https://timesofindia.indiatimes.com/city/noida/lamborghini-involved-in-noida-crash-belongs-youtuber-with-18-7-million-followers/articleshow/119793682.cms"
       },
       {
+        "image": "https://static.toiimg.com/thumb/msid-119793671,imgsize-968260,width-800,resizemode-4/119793671.jpg",
           "headline": "🌍 Khamenei Warns US of 'Strong Blow'!",
-          "what_happened": "⚔️ In a tense exchange, Iran’s Supreme Leader Ayatollah Ali Khamenei issued a stark warning to the US regarding President Trump's threats of airstrikes if Iran fails to comply with nuclear deal demands. \"They will definitely receive a strong counterattack,\" he stated, heightening the atmosphere of diplomatic friction.",
+          "what_happened": "⚔️ In a tense exchange, Iran's Supreme Leader Ayatollah Ali Khamenei issued a stark warning to the US regarding President Trump's threats of airstrikes if Iran fails to comply with nuclear deal demands. \"They will definitely receive a strong counterattack,\" he stated, heightening the atmosphere of diplomatic friction.",
           "why_it_matters": "💣 Why it matters? This exchange epitomizes the precarious balance of power in global politics. Trump's tough stance on Iran after withdrawing from the nuclear deal has reignited fears of military escalation, showcasing the ongoing struggle for control over nuclear proliferation and regional security.",
-          "so_what": "🔮 What's next? As both nations stand firm, the international community watches closely. Will diplomacy prevail, or are we on the brink of conflict? The stakes have never been higher, and it's crucial for world leaders to tread carefully on this delicate path."
+          "so_what": "🔮 What's next? As both nations stand firm, the international community watches closely. Will diplomacy prevail, or are we on the brink of conflict? The stakes have never been higher, and it's crucial for world leaders to tread carefully on this delicate path.",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-will-receive-a-blow-iran-warns-of-strong-response-if-attacked/articleshow/119792267.cms"
       },
       {
+        "image": "https://static.toiimg.com/thumb/msid-119794992,imgsize-97976,width-800,resizemode-4/119794992.jpg",
           "headline": "📉 Mixed Signals from Foreign Investors in India!",
           "what_happened": "📊 March saw foreign portfolio investors demonstrating a confusing pattern, selling more Indian equities than they bought for the third consecutive month. However, investments picked up in the latter half of the month, with a net outflow of ₹3,973 crore ($401.2 million) signaling both caution and opportunity.",
           "why_it_matters": "🔍 Why it matters? This mixed behavior underscores the shifting tides of foreign investment and the increasing scrutiny of India's economic landscape under the shadow of global trade policies. Upcoming trends could dramatically influence market perceptions and investment strategies.",
-          "so_what": "💡 What’s next? As the investment landscape shifts, local funds seem to be moving in the opposite direction, hinting at a potential recovery in domestic markets. It raises an interesting question: can India's economy stand resilient amid global pressures, or will it follow the trend of foreign caution?"
+          "so_what": "💡 What's next? As the investment landscape shifts, local funds seem to be moving in the opposite direction, hinting at a potential recovery in domestic markets. It raises an interesting question: can India's economy stand resilient amid global pressures, or will it follow the trend of foreign caution?",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/hint-of-a-change-foreign-portfolio-investors-net-sellers-in-indian-equities-but-exhibit-strong-buying-in-late-march/articleshow/119794938.cms"
       },
       {
+        "image": "https://static.toiimg.com/thumb/msid-119787254,imgsize-64574,width-800,resizemode-4/119787254.jpg",
           "headline": "🏏 Dhoni Strikes at No. 9: A Surprise Twist!",
           "what_happened": "📉 In a surprising move during CSK's match against RCB, MS Dhoni batted at No. 9—his lowest in IPL history. Though he scored a quick-fire 30*, his unusual batting position has fans and analysts scratching their heads, questioning the strategy behind such a move.",
           "why_it_matters": "🤔 Why it matters? This decision prompts discussions about Dhoni's evolving role in the team. With a solid performance yet a hesitance to take charge earlier in the innings, it reflects both personal choice and team strategy, showing how even icons adapt to the changing game dynamics.",
-          "so_what": "🔮 What comes next? As Dhoni continues to balance experience with the team's demands, fans are left wondering if this pattern will continue. Can he reclaim his earlier dominance, or is it time for newer talents to take the spotlight? Only time will tell!"
+          "so_what": "🔮 What comes next? As Dhoni continues to balance experience with the team's demands, fans are left wondering if this pattern will continue. Can he reclaim his earlier dominance, or is it time for newer talents to take the spotlight? Only time will tell!",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/why-is-ms-dhoni-batting-at-no-9-csk-coach-stephen-fleming-explains-after-loss-to-royals/articleshow/119787197.cms"
       },
       {
+        "image": "https://static.toiimg.com/thumb/msid-119789169,imgsize-111712,width-800,resizemode-4/119789169.jpg",
           "headline": "💰 Fraud Alert: Fintech Founder Convicted!",
           "what_happened": "⚖️ Charlie Javice, the once-celebrated founder of Frank, was found guilty of defrauding JPMorgan Chase in a scheme that inflated her startup's user numbers ahead of its acquisition. The court found her guilty on multiple counts, marking a dramatic fall from grace for the fintech star.",
           "why_it_matters": "🚨 Why it matters? This case highlights the vulnerabilities within the fintech sector, where rapid growth can sometimes lead to shortcuts and ethical breaches. It raises questions about the integrity of startups and the due diligence performed by major corporations during acquisitions.",
-          "so_what": "🔍 What’s next? With sentencing looming for Javice, the broader fintech community will be watching closely. Will this case serve as a cautionary tale that encourages transparency, or will it presage a culture of fear where innovation is stifled by the fear of potential legal repercussions?"
+          "so_what": "🔍 What's next? With sentencing looming for Javice, the broader fintech community will be watching closely. Will this case serve as a cautionary tale that encourages transparency, or will it presage a culture of fear where innovation is stifled by the fear of potential legal repercussions?",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/charlie-javice-the-woman-founder-of-fintech-startup-and-winner-of-forbes-30-under-30-may-face-30-years-jail-terms-for-defrauding-americas-largest-bank-jpmorgan-chase/articleshow/119789044.cms"
       }
   ]
 }
