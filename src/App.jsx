@@ -10,7 +10,7 @@ function App() {
 
   if (!data) {
     return (
-      <div className="flex justify-center items-center min-h-screen text-lg text-gray-900 font-['Poppins']">
+      <div className="flex justify-center items-center min-h-screen text-lg text-gray-900">
         Loading newsletter...
       </div>
     );
@@ -21,11 +21,16 @@ function App() {
       <div className="max-w-[700px] mx-auto text-left bg-white p-8 rounded-lg shadow-sm">
         <header className="text-left mb-8 pb-6 border-b-2 border-gray-200">
           <h1 className="text-3xl mb-3 text-[#E3272A] font-bold">{data.title}</h1>
-          <div className="text-sm text-gray-900">
+          <div className="text-sm text-gray-900 mb-4">
             <span>{data.subtitle}</span>
             <span className="mx-4 opacity-50">|</span>
             <span>{data.date}</span>
           </div>
+          {data.lede && (
+            <p className="text-base text-gray-900 leading-relaxed font-bold">
+              {data.lede}
+            </p>
+          )}
         </header>
 
         <div className="flex flex-col gap-6 py-2">
@@ -60,7 +65,7 @@ function App() {
                       href={story.url} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-800 hover:underline text-sm font-medium transition-colors"
+                      className="text-[#E3272A] hover:text-[#B31F22] hover:underline text-sm font-medium transition-colors"
                     >
                       Read full article →
                     </a>
