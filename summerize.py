@@ -19,7 +19,7 @@ class NewsletterGenerator:
         Returns:
             Dictionary containing the structured newsletter
         """
-        prompt = f"""Create a newsletter summary with the following 6 news items. Format the response as a JSON object with the following structure:
+        prompt = f"""Create an engaging newsletter summary with the following 6 news items. Format the response as a JSON object with the following structure:
 
         {{
             "title": "TOI Global Brief",
@@ -65,13 +65,55 @@ class NewsletterGenerator:
             ]
         }}
 
+        Here's an example of the desired style and format for each story:
+
+        Example Story:
+        {{
+            "headline": "🎨 What happened?",
+            "what_happened": "Ghibli-style dreams are melting GPUs.\nAfter OpenAI rolled out dreamy image generation in ChatGPT (think Totoro meets tech), users rushed in like Spirited Away bathhouse spirits. The result? A GPU sauna. CEO Sam Altman chimed in on X (formerly known as Twitter), announcing emergency cooldowns—rate limits slapped on image requests as servers began to sweat.\n\nThen came part two of the meltdown saga. Rohan Sahai, product lead for Sora (OpenAI's text-to-video wizardry), shared that even Sora's magical movie reels were feeling the heat. \"Our GPUs are frying,\" he said, as Sora got overwhelmed by a flood of surreal, animated, AI-crafted shorts.",
+            "why_it_matters": "🔥 Why it matters?\nGPU overload is the AI version of \"too many cooks in the kitchen.\"\nThese tools are fun, powerful, and wildly popular—which is great! But also… not great if your hardware starts acting like Calcifer in a bad mood. The bottleneck shows the gap between user demand and infrastructure muscle. AI might be magic, but it still needs cold, hard chips to run.",
+            "so_what": "🧊 What next?\nHold the prompts—cooldowns in progress.\nAltman says the limitations are temporary. Free users will get 3 image generations per day \"soon,\" once the dust settles and the GPUs stop sizzling. The Sora crew, meanwhile, is racing against time (and thermals) to stabilize the dream machine.\n\nUntil then: expect delays, be kind to your prompts, and maybe imagine your next Ghibli-inspired artwork… in your head."
+        }}
+
         Requirements for each story:
-        - Headline should be concise and impactful
-        - What happened: Brief description of the event
-        - Why it matters: Explain the significance and implications
-        - So what: Focus on India angle or broader implications
-        - Keep each section concise and informative
-        - Use emojis to make the newsletter more engaging, dont use too many emojis
+        1. Headline: 
+           - Start with a relevant emoji
+           - Be concise and impactful
+           - Use engaging language
+
+        2. What happened:
+           - Start with a relevant emoji
+           - Write in a conversational, engaging tone
+           - Use vivid language and metaphors
+           - Include specific details and quotes when available
+           - Break into short, digestible paragraphs
+           - Use creative analogies and pop culture references when relevant
+
+        3. Why it matters:
+           - Start with a relevant emoji
+           - Explain significance in an engaging way
+           - Use analogies and relatable examples
+           - Connect to broader implications
+           - Make complex topics accessible through creative comparisons
+
+        4. So what:
+           - Start with a relevant emoji
+           - Focus on India angle or broader implications
+           - Use a forward-looking perspective
+           - End with a thought-provoking statement or question
+           - Include practical takeaways or next steps
+
+        Style Guidelines:
+        - Use emojis strategically at the start of each section
+        - Write in a conversational, engaging tone
+        - Use metaphors and analogies to explain complex topics
+        - Break content into short, digestible paragraphs
+        - Include specific details and quotes when available
+        - Make it feel like a friend explaining the news
+        - Use vivid language and engaging examples
+        - End sections with forward-looking statements or questions
+        - Use creative analogies and pop culture references when relevant
+        - Make technical topics accessible through relatable comparisons
 
         the output should be pure text format so its easy to parse it in the json format
         
