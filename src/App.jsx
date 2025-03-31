@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import newsletterData from '../newsletter_output.json';
 
 function App() {
-  const [newsletterData, setNewsletterData] = useState(null);
+  const [data, setData] = useState(null);
 
   useEffect(() => {
-    // Fetch newsletter data
-    fetch('/newsletter_output.json')
-      .then(response => response.json())
-      .then(data => setNewsletterData(data))
-      .catch(error => console.error('Error loading newsletter:', error));
+    setData(newsletterData);
   }, []);
 
-  if (!newsletterData) {
+  if (!data) {
     return <div className="loading">Loading newsletter...</div>;
   }
 
@@ -20,16 +17,16 @@ function App() {
     <div className="app">
       <div className="newsletter-container">
         <header className="newsletter-header">
-          <h1>{newsletterData.title}</h1>
+          <h1>{data.title}</h1>
           <div className="subtitle-date">
-            <span>{newsletterData.subtitle}</span>
+            <span>{data.subtitle}</span>
             <span className="separator">|</span>
-            <span>{newsletterData.date}</span>
+            <span>{data.date}</span>
           </div>
         </header>
 
         <div className="stories-grid">
-          {newsletterData.stories.map((story, index) => (
+          {data.stories.map((story, index) => (
             <article key={index} className="story-card">
               <h2>{story.headline}</h2>
               <div className="story-content">
