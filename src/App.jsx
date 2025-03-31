@@ -26,6 +26,15 @@ function App() {
             <span className="mx-4 opacity-50">|</span>
             <span>{data.date}</span>
           </div>
+          {data.leadimage && (
+            <div className="w-full mb-6">
+              <img 
+                src={data.leadimage} 
+                alt="Newsletter Lead Image"
+                className="w-full h-auto rounded-lg shadow-sm"
+              />
+            </div>
+          )}
           {data.lede && (
             <p className="text-base text-gray-900 leading-relaxed font-bold">
               {data.lede}
