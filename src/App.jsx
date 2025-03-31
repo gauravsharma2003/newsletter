@@ -17,8 +17,8 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen p-8 bg-gray-100">
-      <div className="max-w-[700px] mx-auto text-left bg-white p-8 rounded-lg shadow-sm">
+    <div className="min-h-screen bg-gray-100 md:p-8">
+      <div className="w-full md:max-w-[700px] md:mx-auto text-left bg-white md:p-8 p-4 md:rounded-lg shadow-sm">
         <header className="text-left mb-8 pb-6 border-b-2 border-gray-200">
           <h1 className="text-3xl mb-3 text-[#E3272A] font-bold">{data.title}</h1>
           <div className="text-sm text-gray-900 mb-4">
@@ -47,7 +47,7 @@ function App() {
             <article key={index} className="py-6 border-b border-gray-200 last:border-b-0">
               <h2 className="text-xl mb-4 text-[#E3272A] font-semibold leading-tight">{story.headline}</h2>
               {story.image && (
-                <div className="w-4/5 mb-4">
+                <div className="w-full mb-4">
                   <img 
                     src={story.image} 
                     alt={story.headline}
