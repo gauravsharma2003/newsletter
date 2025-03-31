@@ -1,0 +1,43 @@
+{
+  "title": "TOI Global Brief",
+  "subtitle": "Your world. Decoded.",
+  "date": "March 31, 2025",
+  "stories": [
+    {
+      "headline": "OpenAI's GPU Crisis Heightens with AI Art Demand 🎨",
+      "what_happened": "OpenAI faces GPU overheating issues due to overwhelming user demand for enhanced image generation features in ChatGPT.",
+      "why_it_matters": "This situation highlights the need for infrastructure upgrades as AI technologies gain mainstream popularity.",
+      "so_what": "As Indian developers and startups increasingly adopt AI, this could signal opportunities for enhanced local tech solutions to meet rising demands."
+    },
+    {
+      "headline": "YouTuber's Lamborghini Crash Sparks Outrage in Noida 🚗",
+      "what_happened": "A Lamborghini owned by YouTuber Mridul crashed in Noida, injuring two workers, igniting social media backlash.",
+      "why_it_matters": "The incident reveals the dangers of reckless driving and the repercussions of social media celebrity culture.",
+      "so_what": "Calls for stricter regulations around test-driving luxury cars may intensify, affecting local automotive and influencer industries."
+    },
+    {
+      "headline": "Iran's Khamenei Threatens Strong Response to U.S. Pressure ⚔️",
+      "what_happened": "Iran's Supreme Leader warned of severe retaliation against any U.S. military threats regarding a nuclear deal.",
+      "why_it_matters": "This escalating tension could destabilize geopolitical dynamics in the region, affecting global energy prices.",
+      "so_what": "India's energy imports may be impacted, calling for strategic diversification of sources amidst rising global tensions."
+    },
+    {
+      "headline": "Mixed Signals from Foreign Investors in Indian Markets 📉",
+      "what_happened": "Foreign portfolio investors showed a mixed investment pattern in March, with a notable decrease in outflows.",
+      "why_it_matters": "The fluctuations signify changing investor confidence amidst global economic uncertainty.",
+      "so_what": "Indian markets may need to adapt strategies to attract sustained foreign investment, particularly in times of global instability."
+    },
+    {
+      "headline": "Dhoni's Unconventional No. 9 Batting Position Raises Eyebrows 🏏",
+      "what_happened": "MS Dhoni batted at No. 9 for Chennai Super Kings, sparking discussion about his strategy and fitness.",
+      "why_it_matters": "This unusual decision prompted debate among fans and analysts about the future of the cricketing legend.",
+      "so_what": "As cricket remains a major sport in India, Dhoni's decisions could influence upcoming players' strategies and engagement with fans."
+    },
+    {
+      "headline": "Fintech Founder Convicted of Fraud: What’s Next? 💼",
+      "what_happened": "Charlie Javice, founder of Frank, was convicted of defrauding JPMorgan Chase in a $175 million deal.",
+      "why_it_matters": "This case underscores the importance of transparency in the fintech sector, which is projected to grow globally.",
+      "so_what": "Indian fintech companies should prioritize solid compliance measures to build trust and avoid similar pitfalls as the market evolves."
+    }
+  ]
+}
