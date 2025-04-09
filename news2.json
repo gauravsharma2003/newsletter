@@ -1,0 +1,45 @@
+{
+    "title": "TOI Global Brief",
+    "subtitle": "Your world. Decoded.",
+    "lede": "🗞️ Welcome to 6@6 — your daily dose of the hottest news. From Trump's bold tariff predictions to the Supreme Court's landmark ruling on demolitions, we're serving six hot headlines at 6 o'clock — sharp. Whether it's federal workers facing office chaos, markets tumbling over trade tensions, Aniket Verma's IPL heroics, or ChatGPT's viral image generation, 6@6 is your no-frills briefing on the stories that matter. Let's dive in.",
+    "leadimage": "https://static.toiimg.com/photo/119801450.cms",
+    "date": "April 1, 2025",
+    "stories": [
+        {
+            "headline": "🌐 Donald Trump predicts: India to drop tariffs ahead of 'Liberation Day'",
+            "what_happened": "US President Donald Trump claims India will substantially reduce tariffs alongside other US allies before the reciprocal tariffs deadline on April 2, calling it a 'Liberation Day' for American trade. Trump cites positive strategic outcomes and EU's reduced car tariffs as evidence.",
+            "why_it_matters": "💼 This tariff shift signals a potential boost in US trade by correcting the steep tariffs set on American goods. It reflects Trump's vision for fairer trade practices, emphasizing the need for reciprocity and boosting American competitiveness.",
+            "so_what": "🌍 How will this global tariff shuffle impact international markets? Will India's economy flourish under lower tariffs? Stay tuned for the unfolding economic dynamics post 'Liberation Day'."
+        },
+        {
+            "headline": "🛠️ 'Illegal' demolitions in Prayagraj shock Supreme Court",
+            "what_happened": "The Supreme Court censured the UP government for 'inhuman and illegal' demolitions of houses in Prayagraj, infringing on residents' Article 21 rights. The court directed authorities to compensate affected owners amidst uproar over unchecked demolitions.",
+            "why_it_matters": "⚖️ This case underscores the importance of due process and protection of citizen rights. It sheds light on the critical issue of illegal demolitions and reinforces the significance of shelter rights in the Indian Constitution.",
+            "so_what": "🏠 How will this ruling shape future housing policies? Can citizens expect better safeguards against unjust demolitions? The legal repercussions could set a precedent for protecting homeowners nationwide."
+        },
+        {
+            "headline": "🏢 Federal workers face 'toilet paper-less' office return",
+            "what_happened": "Federal workers in the US grapple with office essentials like toilet paper, parking spots, and privacy upon returning post-pandemic. Chaotic transitions cause logistical snags, with complaints of poor coordination and resource shortages across agencies.",
+            "why_it_matters": "🚽 The lack of basic office provisions highlights the challenges of transitioning back to physical workspaces. It illustrates a broader organizational struggle in managing the workforce's return effectively.",
+            "so_what": "💡 How will the US address these challenges to ensure a smooth office reintegration? Can federal agencies streamline the return process for their employees? The lessons learned could reshape future workplace policies."
+        },
+        {
+            "headline": "💰 Stock market plunges as Sensex, Nifty50 tumble",
+            "what_happened": "BSE Sensex and Nifty50 plummet in trade, witnessing significant declines driven by IT and banking sectors. Concerns over US President Trump's proposed tariffs contribute to market jitters, with a steep fall in major sector indices.",
+            "why_it_matters": "💸 Market fluctuations signal investor apprehension amid tariff uncertainties. The downturn exposes vulnerabilities in sectors sensitive to policy changes, reflecting broader economic implications.",
+            "so_what": "📉 What's the future for Indian equities as trade tensions escalate? Will market conditions stabilize post-tariff announcements? Investors brace for volatility in the wake of global policy shifts."
+        },
+        {
+            "headline": "🏏 Aniket Verma's IPL journey: From adversity to success",
+            "what_happened": "Sunrisers Hyderabad's Aniket Verma shines in the IPL, hitting 12 sixes in 56 balls. His journey, inspired by a Hardik Pandya anecdote, narrates a tale of resilience, familial support, and cricketing passion driving his meteoric rise.",
+            "why_it_matters": "🌟 Aniket's inspirational saga embodies the spirit of triumph over adversity and dedication to one's dreams. His narrative resonates with aspiring athletes, showcasing the transformative power of sport amid personal challenges.",
+            "so_what": "🏆 How will Aniket's IPL success influence budding cricketers? Can his story motivate others to overcome obstacles in pursuit of sporting excellence? The IPL spotlight casts a hopeful beam on cricket's future stars."
+        },
+        {
+            "headline": "🤖 ChatGPT's viral rush: 'Ghibli-style' images surge in popularity",
+            "what_happened": "OpenAI's ChatGPT gains one million users in an hour post-launch of free Ghibli-style image generation. The feature, powered by the GPT-4o model, draws massive engagement, propelling ChatGPT to new heights of creative AI exploration.",
+            "why_it_matters": "🎨 The demand for AI-powered creative tools intensifies with ChatGPT's innovative image generator. Users embrace the nostalgic allure of Ghibli-style visuals, setting a new standard for AI-driven creativity and artistic expression.",
+            "so_what": "🖼️ How will GPT-4o's image generation redefine digital artistry? Can AI-driven visuals revolutionize creative workflows? Artists and tech enthusiasts await the next wave of AI-assisted creativity in the digital realm."
+        }
+    ]
+}

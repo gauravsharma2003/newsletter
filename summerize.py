@@ -24,48 +24,56 @@ class NewsletterGenerator:
         {{
             "title": "TOI Global Brief",
             "subtitle": "Your world. Decoded.",
-            "date": "March 31, 2025",
+            "date": "Today's Date",
+            "lede": "Lede according to the news items", 
             "stories": [
                 {{
                     "headline": "",
                     "what_happened": "",
                     "why_it_matters": "",
                     "so_what": ""
+                    "msid": "msid"
                 }},
                 {{
                     "headline": "",
                     "what_happened": "",
                     "why_it_matters": "",
                     "so_what": ""
+                    "msid": "msid"
                 }},
                 {{
                     "headline": "",
                     "what_happened": "",
                     "why_it_matters": "",
                     "so_what": ""
+                    "msid": "msid"
                 }},
                 {{
                     "headline": "",
                     "what_happened": "",
                     "why_it_matters": "",
                     "so_what": ""
+                    "msid": "msid"
                 }},
                 {{
                     "headline": "",
                     "what_happened": "",
                     "why_it_matters": "",
                     "so_what": ""
+                    "msid": "msid"
                 }},
                 {{
                     "headline": "",
                     "what_happened": "",
                     "why_it_matters": "",
                     "so_what": ""
+                    "msid": "msid"
                 }}
             ]
         }}
 
         Here's an example of the desired style and format for each story:
+        "lede": "🗞️ Welcome to 6@6 — your daily dose of the hottest news. From GPU meltdowns sparked by Studio Ghibli magic to Lambos gone rogue in Noida, we’re serving six hot headlines at 6 o’clock — sharp. Whether it’s Dhoni batting from the depths, global threats heating up, or a fintech founder crashing harder than crypto in 2022, 6@6 is your no-frills briefing on the madness that matters. Let's dive in."
 
         Example Story:
         {{
@@ -73,6 +81,7 @@ class NewsletterGenerator:
             "what_happened": "Ghibli-style dreams are melting GPUs.\nAfter OpenAI rolled out dreamy image generation in ChatGPT (think Totoro meets tech), users rushed in like Spirited Away bathhouse spirits. The result? A GPU sauna. CEO Sam Altman chimed in on X (formerly known as Twitter), announcing emergency cooldowns—rate limits slapped on image requests as servers began to sweat.\n\nThen came part two of the meltdown saga. Rohan Sahai, product lead for Sora (OpenAI's text-to-video wizardry), shared that even Sora's magical movie reels were feeling the heat. \"Our GPUs are frying,\" he said, as Sora got overwhelmed by a flood of surreal, animated, AI-crafted shorts.",
             "why_it_matters": "🔥 Why it matters?\nGPU overload is the AI version of \"too many cooks in the kitchen.\"\nThese tools are fun, powerful, and wildly popular—which is great! But also… not great if your hardware starts acting like Calcifer in a bad mood. The bottleneck shows the gap between user demand and infrastructure muscle. AI might be magic, but it still needs cold, hard chips to run.",
             "so_what": "🧊 What next?\nHold the prompts—cooldowns in progress.\nAltman says the limitations are temporary. Free users will get 3 image generations per day \"soon,\" once the dust settles and the GPUs stop sizzling. The Sora crew, meanwhile, is racing against time (and thermals) to stabilize the dream machine.\n\nUntil then: expect delays, be kind to your prompts, and maybe imagine your next Ghibli-inspired artwork… in your head."
+            "msid": "exactly the same as the msid in the news item that is passed with the news item"
         }}
 
         Requirements for each story:
@@ -102,6 +111,10 @@ class NewsletterGenerator:
            - Use a forward-looking perspective
            - End with a thought-provoking statement or question
            - Include practical takeaways or next steps
+
+        5. msid:
+           - exactly the same as the msid in the news item that is passed with the news item
+           -msid should be in the format and should be a string and should not be changed 
 
         Style Guidelines:
         - Use emojis strategically at the start of each section
