@@ -105,7 +105,7 @@ const ImageWithText = ({ imageUrl, text }) => {
   );
 };
 
-function View({ data }) {
+function View({ data, onRecreate }) {
   if (!data) {
     return (
       <div className="flex justify-center items-center min-h-screen text-lg text-gray-900">
@@ -178,6 +178,15 @@ function View({ data }) {
               </div>
             </article>
           ))}
+        </div>
+        
+        <div className="mt-8 pt-6 border-t border-gray-200 flex justify-center">
+          <button
+            onClick={onRecreate}
+            className="px-6 py-2 bg-[#E3272A] text-white rounded-lg hover:bg-[#B31F22] transition-colors"
+          >
+            Recreate Newsletter
+          </button>
         </div>
       </div>
     </div>

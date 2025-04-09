@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import defaultImage from '../assets/default.png';
 import View from './view';
 
 function Get() {
@@ -79,6 +80,42 @@ function Get() {
       // Add default lead image if not present in response
       const dataWithDefaultImage = {
         ...response.data,
+        leadimage: defaultImage
+      };
+      
+      setNewsData(dataWithDefaultImage);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      clearInterval(timer);
+      setLoading(false);
+      setLoadingTime(0);
+    }
+  };
+
+  const handleRecreate = async () => {
+    setLoading(true);
+    setError(null);
+    setLoadingTime(0);
+    setNewsData(null);
+
+    // Start loading timer
+    const timer = setInterval(() => {
+      setLoadingTime(prev => prev + 1);
+    }, 1000);
+
+    try {
+      const msids = extractMsids(urls);
+      if (msids.length === 0) {
+        throw new Error('No valid msids found in the input');
+      }
+
+      const msidString = msids.join(',');
+      const response = await makeAPICall(msidString);
+      
+      // Add default lead image if not present in response
+      const dataWithDefaultImage = {
+        ...response.data,
         leadimage: response.data.leadimage || 'https://static.toiimg.com/photo/120069788.cms'
       };
       
@@ -139,7 +176,7 @@ function Get() {
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                   </svg>
-                  <span>Fetching news data... This may take up to 30 seconds</span>
+                  <span>Fetching news data... This may take up some seconds</span>
                 </div>
                 {loadingTime > 5 && (
                   <p className="mt-2 text-sm text-center">
@@ -150,7 +187,7 @@ function Get() {
             )}
           </>
         ) : (
-          <View data={newsData} />
+          <View data={newsData} onRecreate={handleRecreate} />
         )}
       </div>
     </div>
