@@ -142,7 +142,7 @@ function View({ data, onRecreate }) {
     <div className="min-h-screen bg-gray-100 md:p-8">
       <div className="w-full md:max-w-[700px] md:mx-auto text-left bg-white md:p-8 p-4 md:rounded-lg shadow-sm">
         <div className="flex justify-between items-center mb-4">
-          <h1 className="text-2xl font-bold text-[#E3272A]">Newsletter Editor</h1>
+          
           <div className="flex gap-2">
             {isEditing ? (
               <button
