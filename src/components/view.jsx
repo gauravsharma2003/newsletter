@@ -1,113 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react';
-
-const DownloadButton = ({ imageUrl, canvasRef }) => {
-  const handleDownload = async (e) => {
-    e.preventDefault();
-    try {
-      if (canvasRef.current) {
-        // Convert canvas to blob
-        canvasRef.current.toBlob((blob) => {
-          const url = window.URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = `image-${Date.now()}.jpg`;
-          document.body.appendChild(a);
-          a.click();
-          window.URL.revokeObjectURL(url);
-          document.body.removeChild(a);
-        }, 'image/jpeg', 1.0);
-      }
-    } catch (error) {
-      console.error('Error downloading image:', error);
-    }
-  };
-
-  return (
-    <button
-      onClick={handleDownload}
-      className="absolute top-2 right-2 p-2 bg-black/50 rounded-full hover:bg-black/70 transition-all duration-200"
-      title="Download image"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5 text-white"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-        />
-      </svg>
-    </button>
-  );
-};
-
-const ImageWithText = ({ imageUrl, text }) => {
-  const canvasRef = useRef(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
-    const img = new Image();
-    
-    img.crossOrigin = 'anonymous';
-    img.onload = () => {
-      // Set canvas dimensions to match image
-      canvas.width = img.width;
-      canvas.height = img.height;
-      
-      // Clear canvas
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
-      // Draw image
-      ctx.drawImage(img, 0, 0);
-      
-      // Add text
-      ctx.font = 'bold 64px Arial';
-      ctx.fillStyle = 'white';
-      ctx.textAlign = 'right';
-      ctx.textBaseline = 'bottom';
-      
-      // Add text shadow for better visibility
-      ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
-      ctx.shadowBlur = 6;
-      ctx.shadowOffsetX = 2;
-      ctx.shadowOffsetY = 2;
-      
-      // Draw text at bottom right with padding
-      ctx.fillText(text, canvas.width - 30, canvas.height - 30);
-      
-      // Reset shadow
-      ctx.shadowColor = 'transparent';
-      ctx.shadowBlur = 0;
-      ctx.shadowOffsetX = 0;
-      ctx.shadowOffsetY = 0;
-    };
-    
-    img.src = imageUrl;
-  }, [imageUrl, text]);
-
-  return (
-    <div className="w-full mb-6 relative group">
-      <canvas
-        ref={canvasRef}
-        className="w-full h-auto rounded-lg shadow-sm"
-        style={{ maxWidth: '100%', height: 'auto' }}
-      />
-      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-        <DownloadButton canvasRef={canvasRef} />
-      </div>
-    </div>
-  );
-};
+import React, { useRef, useState } from 'react';
+import ImageDownloadButton from './ImageDownloadButton';
+import PDFDownloadButton from './PDFDownloadButton';
+import ImageWithText from './ImageWithText';
 
 function View({ data, onRecreate }) {
   const [editableData, setEditableData] = useState(data);
   const [isEditing, setIsEditing] = useState(false);
+  const [isExporting, setIsExporting] = useState(false);
+  const contentRef = useRef(null);
 
   const handleTextChange = (field, value) => {
     setEditableData(prev => ({
@@ -140,7 +40,7 @@ function View({ data, onRecreate }) {
 
   return (
     <div className="min-h-screen bg-gray-100 md:p-8">
-      <div className="w-full md:max-w-[700px] md:mx-auto text-left bg-white md:p-8 p-4 md:rounded-lg shadow-sm">
+      <div className="w-full md:max-w-[700px] md:mx-auto text-left bg-white md:p-8 p-4 md:rounded-lg shadow-sm" ref={contentRef}>
         <div className="flex justify-between items-center mb-4">
           
           <div className="flex gap-2">
@@ -152,12 +52,19 @@ function View({ data, onRecreate }) {
                 Save Changes
               </button>
             ) : (
-              <button
-                onClick={() => setIsEditing(true)}
-                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Edit Content
-              </button>
+              <>
+                <button
+                  onClick={() => setIsEditing(true)}
+                  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  Edit Content
+                </button>
+                <PDFDownloadButton 
+                  newsletterData={editableData}
+                  isExporting={isExporting}
+                  setIsExporting={setIsExporting}
+                />
+              </>
             )}
           </div>
         </div>
@@ -231,7 +138,7 @@ function View({ data, onRecreate }) {
                     className="w-full h-auto rounded-lg shadow-sm"
                   />
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                    <DownloadButton imageUrl={story.image} />
+                    <ImageDownloadButton imageUrl={story.image} />
                   </div>
                 </div>
               )}
